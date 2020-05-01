@@ -39,6 +39,30 @@ Para descargar este proyecto necesitas tener previamente instalado el programa d
 ## Solución de problemas.
 
 ### Solución del problema de los puertos 80 y 3306.
+Captura del panel de control de XAMPP con el puerto 80 ocupado.  
+![Captura del panel de control de XAMPP con el puerto 80 ocupado](IMG/Captura2.png)
+* Por aplicaciones que están utilizando los puertos.  
+Suele pasar que tenemos instalado algún software para escuchar música como Spotify, esto hace que se ocupe el puerto 80 de nuestro firewall y no nos deje utilizar nuestro computador como servidor WEB.  
+Para solucionar esto, tenemos que identificar el programa que esté generando el problema y desinstalarlo.
+Si el progrma que está utilizando el puerto 80 en necesario y no puedes desinstalarlo, tienes la
+opción de cambiar el puerto manualmente en el panel de control de XAMPP.  
+* Como cambiar el puerto de XAMPP:
+  1. Abre el panel de control de XAMPP como administrador.
+  2. Búsca la opción de "Config" y haz click en ella.  
+  ![Config de XAMPP](IMG/Captura3.png)
+  4. Una vez dentro, busca la opción de "Service and Port Settings" y haz click ahí.
+  ![Config de XAMPP](IMG/Captura4.png)
+  5. En la pestaña de "Apache" cambiaremos los valores de "Main Port" y "SSL Port".
+  ![Config de XAMPP](IMG/Captura5.png)
+  6. Tenemos que colocar en "Main Port" el valor de 8080 y el valor de "SSL Port" por 4438.
+  ![Config de XAMPP](IMG/Captura6.png)
+  7. Guardaremos los cambios.
+  8. Despúes, nos iremos a la opción de "Config" y le damos click ahí.
+  ![Config de XAMPP](IMG/Captura7.png)
+  9. Le damos a la opcion de "Apache (httpd.conf)" y cambiaremos todos los valores de 80 a 8080 (son solo 2 los que debes de cambiar "Listen 80" y "ServerName localhost:80").
+  10. Guardaremos los cambios y haremos los mismos pasos del paso 7 y nos meteremos a la opción de "Apache (httpd-ssl.conf)" y cambiaremos los valores de 443 a 4438 (Solo donde dice "Listen 433", "VirtualHost _default _:443" y "ServerName www.example.com:443").
+  11. Guardamos los cambios y encendemos Apache.
+  12. Abrimos nuestro navegador y escribimos "localhost:8080" y nos deberá de funcionar.
 
 ### Solución del problema de la instalación de XAMPP.
 
