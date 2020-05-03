@@ -1,0 +1,36 @@
+-- Copia y pega este código en phpmyadmin en dónde dice "SQL" al lado de "Bases de datos" y "Estado actual"
+
+drop database ToolboxLIAXY;
+
+create database ToolboxLIAXY;
+
+use ToolboxLIAXY;
+
+create table Herramientas(
+    IDHerramienta int AUTO_INCREMENT,
+    NomHerramienta varchar(100),
+    Descripcion varchar(500),
+    Status enum('En Prestamo','En Caja') default 'En Caja',
+    constraint PK_IDHerramienta primary key(IDHerramienta)
+);
+
+create table Usuarios(
+    NUsuario varchar(30),
+    Contra varchar(20),
+    Nombre varchar(50),
+    ApellidoP varchar(25),
+    ApellidoM varchar(25),
+    constraint PK_Usuario primary key(Usuario)
+);
+
+create table Prestamos(
+    NumReg int AUTO_INCREMENT,
+    Usuario varchar(30),
+    NombreU varchar(100),
+    FechaPrestamo varchar(25),
+    HoraPrestamo varchar(15),
+    FechaRegreso varchar(25),
+    HoraRegreso varchar(15),
+    StatusUsuario enum('Entrogo','No ha entregado') default 'No ha entregado',
+    constraint PK_NumReg primary key(NumReg)
+);

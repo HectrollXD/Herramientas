@@ -2,5 +2,6 @@
     $Host = "localhost";
     $User = "root";
     $Password = "";
-    $ConnectionString_root = new mysqli($Host, $User, $Password);
+    $DataBase = "ToolboxLIAXY";
+    $ConnectionString = new mysqli($Host, $User, $Password, $DataBase);
 ?>
