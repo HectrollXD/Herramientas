@@ -20,7 +20,7 @@ create table Usuarios(
     Nombre varchar(50),
     ApellidoP varchar(25),
     ApellidoM varchar(25),
-    constraint PK_Usuario primary key(Usuario)
+    constraint PK_Usuario primary key(NUsuario)
 );
 
 create table Prestamos(
