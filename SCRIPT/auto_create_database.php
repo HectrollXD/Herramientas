@@ -7,7 +7,7 @@
     </head>
     <body style="font-family:console; font-size:18px;">
         <header>
-            <p>Auto create database.</p>
+            <p>Database auto create.</p>
         </header>
         <div>
             <?php
@@ -64,6 +64,18 @@
                     }
                     else{
                         echo "it is necessary to create the database manually...</br>";
+                        if(!$Query['cdb']){
+                            echo("cause error: error to create database.</br>");
+                        }
+                        else if(!$Query['ctbl1']){
+                            echo("cause error: error to create table Herramiantas.</br>");
+                        }
+                        else if(!$Query['ctbl2']){
+                            echo("cause error: error to create table Usuarios.</br>");
+                        }
+                        else if(!$Query['ctbl3']){
+                            echo("cause error: error to create table Prestamos.</br>");
+                        }
                         echo '<input type="button" id="gtphpmyadmin" value="create database manually">';
                     }
                 }
