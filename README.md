@@ -52,6 +52,17 @@ presionamos intro.
 7. Abrimos nuestro navgador y escribimos en el buscador `localhost/Herramientas/`.
 8. ¡Listo! tenemos el programa corriendo.
 
+## Como bajar las actualizaciones del proyecto.
+Para poder actualizar el proyecto conforme se va subiendo a github, es necsario tener 
+instalado lo que es el git en nuestras computadoras. Para ello necesitarás seguir los
+siguientes pasos:
+1. Abres el git bash.
+2. Te diriges a la ruta donde está el proyecto mediante lineas de comando. En este caso será en la carpeta htdocs de
+XAMPP. Para ello escribe en git bash `cd C:/xampp/htdocs/Toolbox-LIAXY`
+3. Una vez dentro de esta carpeta, ejecutaremos el comando de git. Para ello escribirás en git bash `git pull` y emprezará a descargar las actualizaciones.
+4. Listo, ya tienes el programa actualizado.
+Nota: Cada vez que se suba una nueva actualización, necesitarás hacer esto.
+
 ## Solución de problemas.
 
 ### Solución del problema de los puertos 80 y 3306.
