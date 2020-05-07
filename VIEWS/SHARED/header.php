@@ -20,7 +20,7 @@
           Usuarios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Agregar Usuario</a>
+          <a class="dropdown-item" href="agregar-usuario.php">Agregar Usuario</a>
           <a class="dropdown-item" href="#">Modificar Usuario</a>
           <a class="dropdown-item" href="#">Recuperar Usuario</a>
           <div class="dropdown-divider"></div>

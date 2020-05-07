@@ -11,6 +11,7 @@
             <?php include ("SHARED/header.php"); ?>
         </header>
         <div class="container">
+            
         </div>
         <footer>
         </footer>
