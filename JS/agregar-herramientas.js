@@ -1,53 +1,32 @@
 $(document).ready(main);
 
 function main(){
-    $("#agregarusu").click(
+    $("#agreherr").click(
         function(){
             var datos = {
-                "apaterno" : $("#apater").val(),
-                "amaterno" : $("#amater").val(),
-                "nombres" : $("#nom").val(),
-                "usuario" : $("#user").val(),
-                "contra" : $("#pass").val()
+                "nomherr" : $("#nomherr").val(),
+                "desherr" : $("#desherr").val()
             };
-            var validado = [false, false, false, false, false];
+            var validado = [false, false];
             var mensaje_error = "los campos: ";
 
-            if(datos["apaterno"] == ""){
-                mensaje_error += ("Apellido Paterno. ");
+            if(datos["nomherr"] == ""){
+                mensaje_error += ("Nombre de la herramienta. ");
             }else{
                 validado[0] = true;
             }
 
-            if(datos["amaterno"] == ""){
-                mensaje_error += ("Apellido Materno. ");
+            if(datos["desherr"] == ""){
+                mensaje_error += ("Descripcion de la herramienta. ");
             }else{
                 validado[1] = true;
             }
 
-            if(datos["nombres"] == ""){
-                mensaje_error += ("Nombre(s). ");
-            }else{
-                validado[2] = true;
-            }
 
-            if(datos["usuario"] == ""){
-                mensaje_error += ("Usuario. ");
-            }else{
-                validado[3] = true;
-            }
-
-            if(datos["contra"] == ""){
-                mensaje_error += ("Contraseña. ");
-            }else{
-                validado[4] = true;
-            }
-
-
-            if(validado[0] && validado[1] && validado[2] && validado[3] && validado[4]){
+            if(validado[0] && validado[1]){
                 $.ajax({
                     type: 'POST',
-                    url: '../PHP/agregar-usuarios.php',
+                    url: '../PHP/agregar-herramientas.php',
                     data: datos,
                     dataType: 'json',
                     encode: true
@@ -57,9 +36,6 @@ function main(){
                             alert(data.mensaje);
                             $("#apater").val("");
                             $("#amater").val("");
-                            $("#nom").val("");
-                            $("#user").val("");
-                            $("#pass").val("");
                         }
                         else{
                             if(data.errores.conexion){

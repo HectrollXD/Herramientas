@@ -72,9 +72,9 @@
                         </div>
                     </div>
                 </div>
-                <!--Botón agregar-->
+                <!--Botones-->
                 <div class="row">
-                    <div class="col-lg-2 offset-lg-10"><input type="button" value="Crear usuario" id="agregarusu" class="btn btn-success form-control form-control-lg"></div>
+                    <div class="col-lg-4 offset-lg-8"><input type="button" value="Agregar usuario" id="agregarusu" class="btn btn-success form-control" ></div>
                 </div>
             </div>
         </div>

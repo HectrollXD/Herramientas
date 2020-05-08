@@ -32,7 +32,7 @@
           Herramientas
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Agregar Herramienta</a>
+          <a class="dropdown-item" href="agregar-herramientas.php">Agregar Herramienta</a>
           <a class="dropdown-item" href="#">Modificar Herramientas</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Eliminar Herramienta</a>

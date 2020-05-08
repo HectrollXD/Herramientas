@@ -4,28 +4,25 @@
     $errores = array();
     $datos = array();
     
-    $ap = strtoupper($_POST['apaterno']);
-    $am = strtoupper($_POST['amaterno']);
-    $nom = strtoupper($_POST['nombres']);
-    $usu = $_POST['usuario'];
-    $pass = $_POST['contra'];
+    $nh = strtoupper($_POST['nomherr']);
+    $dh = strtoupper($_POST['desherr']);
 
     if(! $ConnectionString){
         $errores["conexion"] = "No se pudo pudo realizar la conexion a la base de datos";
     }
     else{
-        $QueryString = "INSERT INTO Usuarios (NUsuario, Contra, Nombre, ApellidoP, ApellidoM) VALUES(
-            '$usu', '$pass', '$nom', '$ap', '$am' 
+        $QueryString = "INSERT INTO Herramientas (NomHerramienta, Descripcion) VALUES(
+            '$nh', '$dh'
         )";
         $Query = $ConnectionString -> query($QueryString);
         if(! $Query){
-            $errores["insersion"] = "Hubo un problema al crear el usuario.";
+            $errores["insersion"] = "Hubo un problema al agregar la herramienta.";
         }
     }
 
     if( empty($errores) ){
         $datos["exito"] = true;
-        $datos["mensaje"] = "Se ha agregado el usuario con éxito.";
+        $datos["mensaje"] = "Se ha agregado la herramienta con éxito.";
     }
     else{
         $datos["exito"] = false;
