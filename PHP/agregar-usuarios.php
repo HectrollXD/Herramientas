@@ -1,5 +1,5 @@
 <?php
-    include ("conexion.php");
+    include ("conexion_root.php");
     
     $errores = array();
     $datos = array();

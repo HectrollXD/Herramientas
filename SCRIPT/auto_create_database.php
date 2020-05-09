@@ -49,6 +49,8 @@
                             NumReg int AUTO_INCREMENT,
                             Usuario varchar(30),
                             NombreU varchar(100),
+                            HeTomada varchar(100),
+                            DesHeTomada varchar(500),
                             FechaPrestamo varchar(25),
                             HoraPrestamo varchar(15),
                             FechaRegreso varchar(25),
