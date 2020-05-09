@@ -34,8 +34,8 @@ function main(){
                     function(data){
                         if(data.exito){
                             alert(data.mensaje);
-                            $("#apater").val("");
-                            $("#amater").val("");
+                            $("#nomherr").val("");
+                            $("#desherr").val("");
                         }
                         else{
                             if(data.errores.conexion){

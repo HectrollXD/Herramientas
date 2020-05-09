@@ -10,7 +10,7 @@
         <a class="nav-link" href="#">Registros <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tomar Herramienta<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="tomar-herramienta.php">Tomar Herramienta<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">Regresar Herramienta<span class="sr-only">(current)</span></a>

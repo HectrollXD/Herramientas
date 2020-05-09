@@ -11,8 +11,9 @@
         </header>
         <main class="container" style="padding-top:200px">
             <div class="row">
-                <div class="col-lg-3 offset-lg-3"><input type="button" class="btn btn-warning form-control" id="AutoCreateDB" value="Database auto create"></div>
-                <div class="col-lg-3"><input type="button" class="btn btn-warning form-control" id="ManuallyCreateDB" value="Database manually create"></div>
+                <div class="col-lg-4"><input type="button" class="btn btn-warning form-control" id="AutoCreateDB" value="Database auto create"></div>
+                <div class="col-lg-4"><input type="button" class="btn btn-warning form-control" id="ManuallyCreateDB" value="Database manually create"></div>
+                <div class="col-lg-4"><input type="button" class="btn btn-danger form-control" id="DropDatabase" value="Drop Database"></div>
             </div>
             </br>
             <div class="row justify-content-center">
