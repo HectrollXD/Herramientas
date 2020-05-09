@@ -30,20 +30,31 @@
                         </div>
                     </div>
                 </div>
-                <!--Descripcion-->
+                <!--Usuario-->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><img src="../ICONS/info-square-fill.svg" width="32"></span>
+                                <span class="input-group-text"><img src="../ICONS/people-circle.svg" width="32"></span>
                             </div>
-                            <input type="text" class="form-control form-control-lg" id="desherr" placeholder="Descripción de la herramienta" maxlength="500">
+                            <input type="text" class="form-control form-control-lg" id="usuario" placeholder="Nombre de usuario" maxlength="30">
+                        </div>
+                    </div>
+                </div>
+                <!--Contraseña-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><img src="../ICONS/lock-fill.svg" width="32"></span>
+                            </div>
+                            <input type="password" class="form-control form-control-lg" id="contra" placeholder="Contraseña" maxlength="20">
                         </div>
                     </div>
                 </div>
                 <!--Botones-->
                 <div class="row">
-                    <div class="col-lg-4 offset-lg-8"><input type="button" value="Agregar herramienta" id="agreherr" class="btn btn-success form-control" ></div>
+                    <div class="col-lg-4 offset-lg-8"><input type="button" value="Tomar herramienta" id="aceptar" class="btn btn-success form-control" ></div>
                 </div>
             </div>
         </div>
