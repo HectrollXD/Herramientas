@@ -3,7 +3,7 @@
     $tabla = "";
     
     if( $_POST['bus'] == "" ){
-        $QueryString = "SELECT * FROM Prestamos ORDER BY NumReg ASC";
+        $QueryString = "SELECT * FROM Prestamos WHERE StatusUsuario = 'No ha entregado' ORDER BY NumReg ASC";
         $Query = $ConnectionString -> query($QueryString);
         $tabla = "
             <table class='table'>
@@ -15,11 +15,7 @@
                         <th scope='col'>ID herramienta</th>
                         <th scope='col'>Nombre de herramienta</th>
                         <th scope='col'>Descripcion de la herramienta</th>
-                        <th scope='col'>Fecha</th>
-                        <th scope='col'>Hora</th>
-                        <th scope='col'>Fecha de entrega</th>
-                        <th scope='col'>Hora de entrega</th>
-                        <th scope='col'>Status</th>
+                        <th scope='col'></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,11 +29,7 @@
                         <td>$rows[3]</td>
                         <td>$rows[4]</td>
                         <td>$rows[5]</td>
-                        <td>$rows[6]</td>
-                        <td>$rows[7]</td>
-                        <td>$rows[8]</td>
-                        <td>$rows[9]</td>
-                        <td>$rows[10]</td>
+                        <td><input type='button' value='Regresar' class='btn btn-warning form-control' id='$rows[0]' id2='$rows[3]'></td>
                     </tr>
             ";
         }
@@ -66,14 +58,10 @@
                         <th scope='col'>#</th>
                         <th scope='col'>Usuario</th>
                         <th scope='col'>Nombre del usuario</th>
-                        <th scope='col'>ID herramineta</th>
+                        <th scope='col'>ID herramienta</th>
                         <th scope='col'>Nombre de herramienta</th>
                         <th scope='col'>Descripcion de la herramienta</th>
-                        <th scope='col'>Fecha</th>
-                        <th scope='col'>Hora</th>
-                        <th scope='col'>Fecha de entrega</th>
-                        <th scope='col'>Hora de entrega</th>
-                        <th scope='col'>Status</th>
+                        <th scope='col'></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,11 +75,7 @@
                             <td>$rows[3]</td>
                             <td>$rows[4]</td>
                             <td>$rows[5]</td>
-                            <td>$rows[6]</td>
-                            <td>$rows[7]</td>
-                            <td>$rows[8]</td>
-                            <td>$rows[9]</td>
-                            <td>$rows[10]</td>
+                            <td><input type='button' value='Regresar' class='btn btn-warning form-control' id='$rows[0]@$rows[3]'></td>
                         </tr>
             ";
         }

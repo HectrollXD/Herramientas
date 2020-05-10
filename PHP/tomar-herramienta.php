@@ -28,8 +28,9 @@
     $Query = $ConnectionString -> query($QueryString);
     while($rows = $Query -> fetch_array(MYSQLI_NUM)){
         if($rows[0] == $herr){
-            $datos_herr[0] = $rows[1];
-            $datos_herr[1] = $rows[2];
+            $datos_herr[0] = $rows[0];
+            $datos_herr[1] = $rows[1];
+            $datos_herr[2] = $rows[2];
         }
         else{
             $errores['herramienta'] = "No se encontró una herramienta similar.";
@@ -40,10 +41,10 @@
         $fecha = strtoupper(strftime('%d/%B/%Y'));
         $hora = date('h:i A');
         $QueryString = "INSERT INTO Prestamos(
-                Usuario, NombreU, HeTomada, DesHeTomada, FechaPrestamo, HoraPrestamo
+                Usuario, NombreU, IDHerr, HeTomada, DesHeTomada, FechaPrestamo, HoraPrestamo
             )
             VALUES(
-                '$datos_usu[0]', '$datos_usu[1]', '$datos_herr[0]', '$datos_herr[1]','$fecha','$hora'
+                '$datos_usu[0]', '$datos_usu[1]', '$datos_herr[0]', '$datos_herr[1]', '$datos_herr[2]', '$fecha','$hora'
             )
         ";
         $ConnectionString -> query($QueryString);
