@@ -4,6 +4,7 @@ function main(){
     $.ajax({
         type: 'POST',
         url: '../PHP/listado-de-herramientas.php',
+        dataType: 'html'
     }).done(
         function(data){
             $('#herramienta').html(data);

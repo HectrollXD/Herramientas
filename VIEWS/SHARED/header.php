@@ -21,10 +21,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="agregar-usuario.php">Agregar Usuario</a>
-          <a class="dropdown-item" href="#">Modificar Usuario</a>
-          <a class="dropdown-item" href="#">Recuperar Usuario</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Eliminar Usuario</a>
+          <a class="dropdown-item" href="eliminar-usuario.php">Eliminar Usuario</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -33,7 +31,6 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="agregar-herramientas.php">Agregar Herramienta</a>
-          <a class="dropdown-item" href="#">Modificar Herramientas</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Eliminar Herramienta</a>
         </div>

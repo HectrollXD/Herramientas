@@ -1,5 +1,5 @@
 <?php
-    include ("conexion_root.php");
+    include ("conexion.php");
     $tabla = "";
     
     if( $_POST['bus'] == "" ){
