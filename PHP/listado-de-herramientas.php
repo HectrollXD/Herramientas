@@ -1,5 +1,5 @@
 <?php
-    include ("conexion.php");
+    include ("conexion_root.php");
     $opt = "";
     $QueryString = "SELECT * FROM Herramientas WHERE Status = 'En Caja' ORDER BY NomHerramienta ASC";
     $Query = $ConnectionString -> query($QueryString);

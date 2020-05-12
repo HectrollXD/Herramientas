@@ -1,5 +1,5 @@
 <?php
-    include ("conexion.php");
+    include ("conexion_root.php");
 
     $usu = $_POST['usu'];
     $contra = $_POST['contra'];

@@ -1,5 +1,5 @@
 <?php
-    include ("conexion.php");
+    include ("conexion_root.php");
     $datos = array();
     $errores = array();
     $idp = $_POST['idp'];
